@@ -35,7 +35,6 @@ public class Utility {
 		}
 		return true;
 	}
-	
 	public static boolean isValidEmail(String mail) {
 		if(Pattern.matches("[a-zA-Z0-9_+&*-]+(?:\\.[a-zA-Z0-9_+&*-]+)*@(infoobjects.com)", mail)) {
 			return true;
