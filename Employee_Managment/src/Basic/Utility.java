@@ -41,28 +41,24 @@ public class Utility {
 		}
 		else return false;
 	}
-	
 	public static boolean isValidAddress(String add) {
 		if(add.equals("")) {
 			return false;
 		}
 		return true;
 	}
-	
 	public static boolean isValidPhnoNumber(String phno) {
 		if(!Pattern.matches("(0/91)?[7-9][0-9]{9}", phno)) {
 			return false;
 		}
 		return true;
 	}
-	
 	public static boolean isValidName(String name) {
 		if(!Pattern.matches("[a-zA-Z ]+", name)) {
 			return false;
 		}
 		return true;
 	}
-
 	public static boolean isValidAge(String tAge) {
 		if(!Pattern.matches("[0-9]+", tAge)){
 			return false;
@@ -72,7 +68,6 @@ public class Utility {
 		
 		return true;
 	}
-	
 	public static boolean isValidGender(int tGen) {
 		if(Employee.mapToGender(tGen)!=null) {
 			return true;
@@ -88,7 +83,6 @@ public class Utility {
 			return false;
 		}
 	}
-	
 	public static String[] parseName(String name) {
 		String[] names = name.split(" ");
 		if(names.length == 1) {
