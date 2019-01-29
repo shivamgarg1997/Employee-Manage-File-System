@@ -20,7 +20,6 @@ public class Utility {
          } 
          return hashtext; 
 	}
-	
 	public static boolean isValidDate(String tDate, String format) {
 		try {
 			SimpleDateFormat sdf = new SimpleDateFormat(format);
